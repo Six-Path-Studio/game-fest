@@ -3,6 +3,8 @@ import React from 'react';
 const Hero = () => {
   return (
     <div>
+      <img src="/pattern.png" className='absolute top-32' alt="" />
+      <img src="/pattern2.png" className='absolute right-0 top-10' alt="" />
       <div className='w-1/2 mx-auto my-32 text-center'>
         <h1 className='heading text-6xl'>The Maiden Edition of Game Festival by Gamverse Africa</h1>
         <p className='my-4 text-lg lg:w-[70%] mx-auto'>Promoting the African culture, developers, gamers, creatives and enthusiast through the game space.</p>
