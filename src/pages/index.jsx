@@ -5,26 +5,12 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import dynamic from 'next/dynamic';
 import Card from "@/components/Card";
+import Slider from "@/components/Slider";
 const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
   ssr: false,
 });
 
 export default function Home() {
-  const options = {
-    loop: true,
-    margin: 20,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    startPosition: 1.5,
-    responsive: {
-      600: {
-        items: 3
-      },
-      1000: {
-        items: 5
-      }
-    }
-  }
   return (
     <>
       <Head>
@@ -34,14 +20,21 @@ export default function Home() {
       <HeaderNav />
       <Hero />
       <OwlCarousel
-        rtl="true"
-        options={options}
+
+        loop={true}
+        margin={20}
+        autoplay={true}
+        autoplaySpeed={2000}
+        items={2}
+        stagePadding={300}
+        autoplayTimeout={2000}
       >
+        <Card color="#CC00FF" text="Get better returns on my money" />
         <Card color="#DFCF3D" text="Game showcase of different games" />
-        <Card color="#DFCF3D" text="Game showcase of different games" />
-        <Card color="#DFCF3D" text="Game showcase of different games" />
-        <Card color="#DFCF3D" text="Game showcase of different games" />
+        <Card color="#0066F5" text="Game for Good Documentary" />
+        <Card color="#58CC4E" text="Promoting the Games Culture" />
       </OwlCarousel>
+      <Slider />
     </>
   )
 }
