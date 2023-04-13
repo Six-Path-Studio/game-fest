@@ -11,14 +11,30 @@ const Slider = () => {
   return (
     <div>
       <OwlCarousel
-        rtl={true}
-        loop={true}
-        margin={20}
-        autoplay={true}
-        autoplaySpeed={2000}
-        items={3}
-        stagePadding={150}
-        autoplayTimeout={2000}
+        responsive={
+          {
+            0: {
+              items: 1,
+              rtl: true,
+              loop: true,
+              autoplay: true,
+              autoplaySpeed: 2000,
+              stagePadding: 70,
+              autoplayTimeout: 2000,
+              margin: 20,
+            },
+            1000: {
+              items: 3,
+              rtl: true,
+              loop: true,
+              margin: 20,
+              autoplay: true,
+              autoplaySpeed: 2000,
+              stagePadding: 150,
+              autoplayTimeout: 2000,
+            }
+          }
+        }
       >
         <Card color="#CC00FF" text="Get better returns on my money" />
         <Card color="#DFCF3D" text="Interesting Game Release / Launch" />

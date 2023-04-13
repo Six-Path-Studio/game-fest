@@ -20,38 +20,54 @@ export default function Home() {
       </Head>
       <HeaderNav />
       <Hero />
-      <OwlCarousel
-
-        loop={true}
-        margin={20}
-        autoplay={true}
-        autoplaySpeed={2000}
-        items={2}
-        stagePadding={300}
-        autoplayTimeout={2000}
-      >
-        <Card color="#CC00FF" text="Get better returns on my money" />
-        <Card color="#DFCF3D" text="Game showcase of different games" />
-        <Card color="#0066F5" text="Game for Good Documentary" />
-        <Card color="#58CC4E" text="Promoting the Games Culture" />
-      </OwlCarousel>
+      <div className="sm:mt-10">
+        <OwlCarousel
+          responsive={
+            {
+              0: {
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                stagePadding: 50,
+                autoplayTimeout: 2000,
+                margin: 20,
+              },
+              1000: {
+                items: 2,
+                loop: true,
+                margin: 20,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                stagePadding: 300,
+                autoplayTimeout: 2000,
+              }
+            }
+          }
+        >
+          <Card color="#CC00FF" text="Get better returns on my money" />
+          <Card color="#DFCF3D" text="Game showcase of different games" />
+          <Card color="#0066F5" text="Game for Good Documentary" />
+          <Card color="#58CC4E" text="Promoting the Games Culture" />
+        </OwlCarousel>
+      </div>
       <Slider />
-      <div className="flex m-20">
-        <img src="/about1.png" alt="" />
-        <div className="p-24 my-auto bg-[#0066F5]">
-          <h1 className="text-5xl font-bold heading text-[#DFFF18]">About Game <br /> Festival 2023</h1>
-          <p className="text-xl my-8">Game Festival is a gathering that is geared towards building a strong game ecosystem in Nigeria and beyond. It is a festival that would feature activities like Esport, workshop, Game showcase etc, promoting the African culture through the gaming industry.
+      <div className="lg:flex lg:m-20 m-4">
+        <img src="/about1.png" className="sm:hidden lg:block md:hidden" alt="" />
+        <div className="lg:p-16 p-4 my-auto bg-[#0066F5]">
+          <h1 className="lg:text-5xl text-3xl font-bold heading text-[#DFFF18]">About Game <br /> Festival 2023</h1>
+          <p className="lg:text-lg text-sm my-8">Game Festival is a gathering that is geared towards building a strong game ecosystem in Nigeria and beyond. It is a festival that would feature activities like Esport, workshop, Game showcase etc, promoting the African culture through the gaming industry.
             <br /><br />
             Our aim is to expand the gaming industry in Africa, with a better and inclusive representative in the global gaming industry.</p>
         </div>
-        <img src="/about2.png" alt="" />
+        <img src="/about2.png" className="sm:hidden lg:block md:hidden" alt="" />
       </div>
       <div className="my-20">
-        <h1 className="text-5xl text-center font-black">Sponsors / Partner</h1>
+        <h1 className="lg:text-5xl text-3xl text-center font-black">Sponsors / Partner</h1>
       </div>
-      <div className="m-20 bg-[#0066F5] p-20 rounded-xl">
-        <h1 className="text-[#DFFF18] heading text-4xl mb-8">Our Story</h1>
-        <p className="text-xl">Our mission at the Nigeria Game Festival is to showcase and celebrate the rich diversity of the gaming industry in Nigeria. We strive to create an inclusive and welcoming environment for gamers of all ages, backgrounds, and skill levels to come together and connect through their love of gaming.
+      <div className="lg:m-20 m-4 bg-[#0066F5] lg:p-20 p-4 rounded-xl">
+        <h1 className="text-[#DFFF18] heading lg:text-4xl text-2xl mb-8">Our Story</h1>
+        <p className="lg:text-lg text-sm">Our mission at the Nigeria Game Festival is to showcase and celebrate the rich diversity of the gaming industry in Nigeria. We strive to create an inclusive and welcoming environment for gamers of all ages, backgrounds, and skill levels to come together and connect through their love of gaming.
           <br /> <br />
           Games have been here since the history of man, over the years it has evolved to the level of advancement  it enjoys today. Adoption of technology has made life easy and over time we are experiencing groundbreaking emerging technologies.
           <br /> <br />
@@ -62,20 +78,37 @@ export default function Home() {
           <br /> <br />
           Above all, we are dedicated to providing a fun and engaging experience for all attendees, and to building a vibrant and supportive community of gamers in Nigeria.</p>
       </div>
-      <OwlCarousel
-        loop={true}
-        margin={20}
-        autoplay={true}
-        autoplaySpeed={2000}
-        items={3}
-        stagePadding={100}
-        autoplayTimeout={2000}
-      >
-        <Card color="#CC00FF" text="Showcase your games." />
-        <Card color="#DFCF3D" text="Become a Sponsor" />
-        <Card color="#0066F5" text="Become a Partner" />
-        <Card color="#58CC4E" text="Become a Media Partner" />
-      </OwlCarousel>
+      <div className="sm:my-10">
+        <OwlCarousel
+          responsive={
+            {
+              0: {
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                stagePadding: 50,
+                autoplayTimeout: 2000,
+                margin: 20,
+              },
+              1000: {
+                items: 2,
+                loop: true,
+                margin: 20,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                stagePadding: 250,
+                autoplayTimeout: 2000,
+              }
+            }
+          }
+        >
+          <Card color="#CC00FF" text="Showcase your games." />
+          <Card color="#DFCF3D" text="Become a Sponsor" />
+          <Card color="#0066F5" text="Become a Partner" />
+          <Card color="#58CC4E" text="Become a Media Partner" />
+        </OwlCarousel>
+      </div>
       <FooterNav />
     </>
   )

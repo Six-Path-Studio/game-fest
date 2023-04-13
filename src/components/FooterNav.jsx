@@ -2,16 +2,16 @@ import React from 'react';
 
 const FooterNav = () => {
   return (
-    <div className='p-8 px-20'>
-      <div className='flex justify-between'>
+    <div className='lg:p-8 p-4 lg:px-20'>
+      <div className='lg:flex justify-between'>
         <img src="/white-logo.png" alt="" />
-        <p>Home</p>
-        <p>Game Showcase</p>
-        <p>Games for Good</p>
-        <p>Sponsors / Partners</p>
-        <p>Our Merch</p>
-        <p>Our Merch</p>
-        <div className='w-40 justify-between flex'>
+        <p className='sm:my-3'>Home</p>
+        <p className='sm:my-3'>Game Showcase</p>
+        <p className='sm:my-3'>Games for Good</p>
+        <p className='sm:my-3'>Sponsors / Partners</p>
+        <p className='sm:my-3'>Our Merch</p>
+        <p className='sm:my-3'>Our Merch</p>
+        <div className='lg:w-40 justify-between flex'>
           <img src="/insta.png" className='w-6 h-6' alt="" />
           <img src="/twitter.png" className='w-6 h-6' alt="" />
           <img src="/link.png" className='w-6 h-6' alt="" />

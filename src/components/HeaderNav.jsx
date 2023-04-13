@@ -4,7 +4,7 @@ const HeaderNav = () => {
   return (
     <div className='p-10'>
         <img src="/white-logo.png" className='mx-auto' alt="" />
-        <div className='flex w-[60%] mx-auto justify-between my-6'>
+        <div className='flex w-[60%] mx-auto justify-between my-6 sm:hidden'>
           <p>Home</p>
           <p>Game Showcase</p>
           <p>Games for Good</p>
