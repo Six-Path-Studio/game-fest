@@ -45,7 +45,7 @@ export default function Home() {
             }
           }
         >
-          <Card color="#CC00FF" text="Get better returns on my money" />
+          <Card color="#CC00FF" text="Play and Earn money in Crypto" />
           <Card color="#DFCF3D" text="Game showcase of different games" />
           <Card color="#0066F5" text="Game for Good Documentary" />
           <Card color="#58CC4E" text="Promoting the Games Culture" />
@@ -96,7 +96,7 @@ export default function Home() {
       </div>
       <div className="lg:m-20 m-4 bg-[#0066F5] lg:p-20 p-4 rounded-xl">
         <h1 className="text-[#DFFF18] heading lg:text-4xl text-2xl mb-8">Our Story</h1>
-        <p className="lg:text-lg text-sm">Our mission at the Nigeria Game Festival is to showcase and celebrate the rich diversity of the gaming industry in Nigeria. We strive to create an inclusive and welcoming environment for gamers of all ages, backgrounds, and skill levels to come together and connect through their love of gaming.
+        <p className="lg:text-lg text-sm">Our mission with Game Fest is to showcase and celebrate the rich diversity of the gaming industry in Nigeria. We strive to create an inclusive and welcoming environment for gamers of all ages, backgrounds, and skill levels to come together and connect through their love of gaming.
           <br /> <br />
           Games have been here since the history of man, over the years it has evolved to the level of advancement  it enjoys today. Adoption of technology has made life easy and over time we are experiencing groundbreaking emerging technologies.
           <br /> <br />
