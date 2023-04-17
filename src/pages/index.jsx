@@ -45,7 +45,7 @@ export default function Home() {
             }
           }
         >
-          <Card color="#CC00FF" text="Play and Earn money in Crypto" />
+          <Card color="#CC00FF" text="Play to Earn money in Crypto" />
           <Card color="#DFCF3D" text="Game showcase of different games" />
           <Card color="#0066F5" text="Game for Good Documentary" />
           <Card color="#58CC4E" text="Promoting the Games Culture" />
@@ -54,7 +54,7 @@ export default function Home() {
       <Slider />
       <div className="lg:flex lg:m-20 m-4">
         <img src="/about1.png" className="sm:hidden lg:block md:hidden" alt="" />
-        <div className="lg:p-16 p-4 my-auto bg-[#0066F5]">
+        <div className="lg:p-16 p-4 my-auto rounded-md bg-[#0066F5]">
           <h1 className="lg:text-5xl text-3xl font-bold heading text-[#DFFF18]">About Game <br /> Festival 2023</h1>
           <p className="lg:text-lg text-sm my-8">Game Festival is a gathering that is geared towards building a strong game ecosystem in Nigeria and beyond. It is a festival that would feature activities like Esport, workshop, Game showcase etc, promoting the African culture through the gaming industry.
             <br /><br />
@@ -81,10 +81,14 @@ export default function Home() {
         <h1 className="lg:text-5xl text-3xl text-center mt-10 font-black">Partners</h1>
         <div className="lg:flex justify-between my-6">
           <div className="m-3 p-4 border border-[#0066F5] rounded-md">
-            <img src="/sponsors/genztechies.png" alt="" />
+            <a href="https://www.genztechies.com/" target="_blank">
+              <img src="/sponsors/genztechies.png" alt="" />
+            </a>
           </div>
           <div className="m-3 p-4 border border-[#0066F5] rounded-md">
-            <img src="/sponsors/Accelerate.png" alt="" />
+            <a href="https://acceleratehub.co/" target="_blank">
+              <img src="/sponsors/Accelerate.png" alt="" />
+            </a>
           </div>
           <div className="m-3 p-4 border border-[#0066F5] rounded-md">
             <img src="/sponsors/techharcourt.png" alt="" />

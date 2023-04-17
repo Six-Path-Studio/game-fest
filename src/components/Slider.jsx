@@ -36,7 +36,7 @@ const Slider = () => {
           }
         }
       >
-        <Card color="#CC00FF" text="Play and Earn money in Crypto" />
+        <Card color="#CC00FF" text="Play to Earn money in Crypto" />
         <Card color="#DFCF3D" text="Interesting Game Release / Launch" />
         <Card color="#0066F5" text="Afro Games Culture Showcase" />
         <Card color="#58CC4E" text="Promoting Games Culture" />
