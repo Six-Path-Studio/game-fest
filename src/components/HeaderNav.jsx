@@ -3,15 +3,16 @@ import React from 'react';
 const HeaderNav = () => {
   return (
     <div className='p-10'>
-        <img src="/white-logo.png" className='mx-auto' alt="" />
-        <div className='flex w-[60%] mx-auto justify-between my-6 sm:hidden'>
-          <p>Home</p>
-          <p>Game Showcase</p>
-          <p>Games for Good</p>
+      <img src="/white-logo.png" className='mx-auto' alt="" />
+      <div className='flex w-[60%] mx-auto justify-between my-6 sm:hidden'>
+        <p>Home</p>
+        <p>Game Showcase</p>
+        <p>Games for Good</p>
+        <a href="#sponsors">
           <p>Sponsors / Partners</p>
-          <p>Our Merch</p>
-          <p>Our Merch</p>
-        </div>
+        </a>
+        <p>Our Merch</p>
+      </div>
     </div>
   );
 };

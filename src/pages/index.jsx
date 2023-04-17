@@ -62,8 +62,37 @@ export default function Home() {
         </div>
         <img src="/about2.png" className="sm:hidden lg:block md:hidden" alt="" />
       </div>
-      <div className="my-20">
-        <h1 className="lg:text-5xl text-3xl text-center font-black">Sponsors / Partner</h1>
+      <div className="lg:p-20 p-4" id="sponsors">
+        <h1 className="lg:text-5xl text-3xl text-center font-black">Sponsors</h1>
+        <div className="lg:flex justify-between my-6">
+          <div className="m-3 p-4 border border-[#0066F5] rounded-md">
+            <img src="/sponsors/sixpath.png" alt="" />
+          </div>
+          <div className="m-3 p-4 border border-[#0066F5] rounded-md">
+            <img src="/sponsors/sixpath.png" alt="" />
+          </div>
+          <div className="m-3 p-4 border border-[#0066F5] rounded-md">
+            <img src="/sponsors/sixpath.png" alt="" />
+          </div>
+          <div className="m-3 p-4 border border-[#0066F5] rounded-md">
+            <img src="/sponsors/sixpath.png" alt="" />
+          </div>
+        </div>
+        <h1 className="lg:text-5xl text-3xl text-center mt-10 font-black">Partners</h1>
+        <div className="lg:flex justify-between my-6">
+          <div className="m-3 p-4 border border-[#0066F5] rounded-md">
+            <img src="/sponsors/genztechies.png" alt="" />
+          </div>
+          <div className="m-3 p-4 border border-[#0066F5] rounded-md">
+            <img src="/sponsors/Accelerate.png" alt="" />
+          </div>
+          <div className="m-3 p-4 border border-[#0066F5] rounded-md">
+            <img src="/sponsors/techharcourt.png" alt="" />
+          </div>
+          <div className="m-3 p-4 border border-[#0066F5] rounded-md">
+            <img src="/sponsors/letsbuild.png" alt="" />
+          </div>
+        </div>
       </div>
       <div className="lg:m-20 m-4 bg-[#0066F5] lg:p-20 p-4 rounded-xl">
         <h1 className="text-[#DFFF18] heading lg:text-4xl text-2xl mb-8">Our Story</h1>

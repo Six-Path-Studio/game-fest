@@ -8,8 +8,9 @@ const FooterNav = () => {
         <p className='sm:my-3'>Home</p>
         <p className='sm:my-3'>Game Showcase</p>
         <p className='sm:my-3'>Games for Good</p>
-        <p className='sm:my-3'>Sponsors / Partners</p>
-        <p className='sm:my-3'>Our Merch</p>
+        <p className='sm:my-3'>
+          <a href="#sponsors">
+            Sponsors / Partners</a></p>
         <p className='sm:my-3'>Our Merch</p>
         <div className='lg:w-40 justify-between flex'>
           <img src="/insta.png" className='w-6 h-6' alt="" />
