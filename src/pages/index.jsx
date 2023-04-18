@@ -91,10 +91,14 @@ export default function Home() {
             </a>
           </div>
           <div className="m-3 p-4 border border-[#0066F5] rounded-md">
-            <img src="/sponsors/techharcourt.png" alt="" />
+            <a href="">
+              <img src="/sponsors/techharcourt.png" alt="" />
+            </a>
           </div>
           <div className="m-3 p-4 border border-[#0066F5] rounded-md">
-            <img src="/sponsors/letsbuild.png" alt="" />
+            <a href="">
+              <img src="/sponsors/letsbuild.png" alt="" />
+            </a>
           </div>
         </div>
       </div>
