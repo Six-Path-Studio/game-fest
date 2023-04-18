@@ -17,6 +17,7 @@ export default function Home() {
       <Head>
         <title>Game Fest</title>
         <link rel="icon" href="/favicon.png" />
+        <meta name="description" content="Game Festival is a gathering that is geared towards building a strong game ecosystem in Nigeria and beyond." />
       </Head>
       <HeaderNav />
       <Hero />
@@ -140,10 +141,18 @@ export default function Home() {
             }
           }
         >
-          <Card color="#CC00FF" text="Showcase your games." />
-          <Card color="#DFCF3D" text="Become a Sponsor" />
-          <Card color="#0066F5" text="Become a Partner" />
-          <Card color="#58CC4E" text="Become a Media Partner" />
+          <a href="https://calendly.com/gameverseafrica/30min" target="_blank">
+            <Card color="#CC00FF" text="Showcase your games." />
+          </a>
+          <a href="https://calendly.com/gameverseafrica/30min" target="_blank">
+            <Card color="#DFCF3D" text="Become a Sponsor" />
+          </a>
+          <a href="https://calendly.com/gameverseafrica/30min" target="_blank">
+            <Card color="#0066F5" text="Become a Partner" />
+          </a>
+          <a href="https://calendly.com/gameverseafrica/30min" target="_blank">
+            <Card color="#58CC4E" text="Media Partnership" />
+          </a>
         </OwlCarousel>
       </div>
       <FooterNav />
