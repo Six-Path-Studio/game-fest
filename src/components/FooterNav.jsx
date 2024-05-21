@@ -2,7 +2,7 @@ import React from 'react';
 
 const FooterNav = () => {
   return (
-    <div className='lg:p-8 p-4 lg:px-20'>
+    <div className='lg:p-8 p-4 bg-[#161616] lg:px-20'>
       <div className='lg:flex justify-between'>
         <img src="/white-logo.png" alt="" />
         <p className='sm:my-3'>Home</p>

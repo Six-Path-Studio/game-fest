@@ -12,6 +12,7 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
 });
 
 export default function Home() {
+  const stacks = ["Content Creators", "Gamers", "Game Developer", "Designer", "Community Managers", "3D / 2D Artist", "Motion Designers", "Influencers", "Writers", "Cinematographer", "Developers", "Animators", "PMs", "VFx Artists", "Social Media Managers", "Voice Artist"]
   return (
     <>
       <Head>
@@ -55,55 +56,94 @@ export default function Home() {
       <Slider />
       <div className="lg:flex lg:m-20 m-4">
         <img src="/about1.png" className="sm:hidden lg:block md:hidden" alt="" />
-        <div className="lg:p-16 p-4 my-auto rounded-md bg-[#0066F5]">
-          <h1 className="lg:text-5xl text-3xl font-bold heading text-[#DFFF18]">About Game <br /> Festival 2023</h1>
-          <p className="lg:text-lg text-sm my-8">Game Festival is a gathering that is geared towards building a strong game ecosystem in Nigeria and beyond. It is a festival that would feature activities like Esport, workshop, Game showcase etc, promoting the African culture through the gaming industry.
-            <br /><br />
-            Our aim is to expand the gaming industry in Africa, with a better and inclusive representative in the global gaming industry.</p>
+        <div className="lg:p-16 p-4 my-auto rounded-md bg-[#151515]">
+          <h1 className="lg:text-3xl text-3xl font-bold heading text-[#DFFF18]">About Game Expo 2024</h1>
+          <p className="lg:text-lg text-sm my-8">Game Expo 24 is a gathering that is geared towards building a strong game ecosystem in Nigeria and beyond. It is a conference that would feature activities like Esport, workshop, Game showcase etc, promoting the African culture through the gaming industry.
+            <br /> <br />
+            Our aim is to expand the games industry in Africa, with a better and inclusive representative in the global gaming industry.</p>
         </div>
         <img src="/about2.png" className="sm:hidden lg:block md:hidden" alt="" />
       </div>
-      <div className="lg:p-20 p-4" id="sponsors">
-        <h1 className="lg:text-5xl text-3xl text-center font-black">Sponsors</h1>
-        <div className="lg:flex justify-between my-6">
-          <div className="m-3 p-4 border border-[#0066F5] rounded-md">
-            <img src="/sponsors/sixpath.png" alt="" />
-          </div>
-          <div className="m-3 p-4 border border-[#0066F5] rounded-md">
-            <img src="/sponsors/sixpath.png" alt="" />
-          </div>
-          <div className="m-3 p-4 border border-[#0066F5] rounded-md">
-            <img src="/sponsors/sixpath.png" alt="" />
-          </div>
-          <div className="m-3 p-4 border border-[#0066F5] rounded-md">
-            <img src="/sponsors/sixpath.png" alt="" />
+
+      <section className="lg:p-20 p-4 relative">
+        <img src="/Container.png" className='absolute left-0 top-32 sm:w-20 md:w-20 lg:w-40' alt="" />
+        <img src="/Container1.png" className='absolute right-0 top-0 sm:w-20 lg:w-44 md:w-20' alt="" />
+        <h1 className="lg:text-6xl text-3xl lg:w-[50%] heading">Why is our theme titled: <span className="text-[#DFCF3D]">Explore</span></h1>
+        <div className="lg:w-[60%] ml-auto">
+          <p className="my-4 lg:text-lg text-sm">The Africa Technology Expo is an annual expo (exhibition) bringing together tech startups, established tech companies, investors, and tech enthusiasts to showcase innovation, tech products, and solutions. The event aims to foster collaboration, drive investment, and accelerate the growth of the African tech ecosystem.</p>
+          <div className="flex">
+            <button className="rounded-full p-3 bg-white lg:w-40 text-black">Get ticket</button>
+            <button className="rounded-full ml-6 p-3 border border-white lg:w-40 text-white">Book a Stand</button>
           </div>
         </div>
-        <h1 className="lg:text-5xl text-3xl text-center mt-10 font-black">Partners</h1>
-        <div className="lg:flex justify-between my-6">
-          <div className="m-3 p-4 border border-[#0066F5] rounded-md">
-            <a href="https://www.genztechies.com/" target="_blank">
-              <img src="/sponsors/genztechies.png" alt="" />
-            </a>
+      </section>
+
+      <section className="my-20">
+        <h1 className="heading lg:w-[60%] sm:m-4 text-3xl text-center mx-auto lg:text-6xl">who should attend Game expo 24?</h1>
+        <div className='bg-[#121914] lg:p-12 rounded-xl p-4 my-12 lg:mx-32'>
+          <div className='flex mt-6 flex-wrap '>
+            {stacks.map((stack, index) => <button key={index} className='flex mr-4 lg:min-w-52 lg:px-6 my-2 bg-[#FFFFFF1A] p-3 justify-between rounded-md'>
+              <img className='my-auto' src="/cloud.svg" alt="" />
+              <p className='lg:text-base text-sm ml-3'>{stack}</p>
+            </button>)}
           </div>
-          <div className="m-3 p-4 border border-[#0066F5] rounded-md">
-            <a href="https://acceleratehub.co/" target="_blank">
-              <img src="/sponsors/Accelerate.png" alt="" />
-            </a>
+        </div>
+      </section>
+
+      <section className="my-20">
+        <div className="flex justify-center">
+          <h1 className="heading text-center lg:text-6xl text-3xl">Updates and Link</h1>
+          <img className="sm:w-8" src="/SVG_margin.svg" alt="" />
+        </div>
+      </section>
+
+      <div className="" id="sponsors">
+        <div className="lg:p-20 p-4">
+          <div className="text-center">
+            <h1 className="lg:text-5xl heading text-3xl text-center font-black">Our Sponsors</h1>
+            <p className="text-3xl text-[#DFCF3D]">(#gameexpo24):</p>
           </div>
-          <div className="m-3 p-4 border border-[#0066F5] rounded-md">
-            <a href="">
-              <img src="/sponsors/techharcourt.png" alt="" />
-            </a>
+          <div className="lg:flex justify-between my-6">
+            <div className="m-3 p-4 border border-[#FFFFFF54] rounded-md">
+              <img src="/sponsors/sixpath.png" alt="" />
+            </div>
+            <div className="m-3 p-4 border border-[#FFFFFF54] rounded-md">
+              <img src="/sponsors/sixpath.png" alt="" />
+            </div>
+            <div className="m-3 p-4 border border-[#FFFFFF54] rounded-md">
+              <img src="/sponsors/sixpath.png" alt="" />
+            </div>
+            <div className="m-3 p-4 border border-[#FFFFFF54] rounded-md">
+              <img src="/sponsors/sixpath.png" alt="" />
+            </div>
           </div>
-          <div className="m-3 p-4 border border-[#0066F5] rounded-md">
-            <a href="">
-              <img src="/sponsors/letsbuild.png" alt="" />
-            </a>
+        </div>
+        <div className="relative">
+          <img src="/Container.png" className='absolute -top-20 sm:w-20 md:w-20 lg:w-40' alt="" />
+          <img src="/Container1.png" className='absolute right-0 top-0 sm:w-20 lg:w-44 md:w-20' alt="" />
+          <div className="lg:px-20 py-10 p-4">
+            <div>
+              <h1 className="lg:text-5xl text-3xl heading text-center font-black">Our Community</h1>
+              <h1 className="lg:text-5xl text-3xl text-[#DFCF3D] heading text-center font-black">Partners:</h1>
+            </div>
+            <div className="flex sm:flex-wrap justify-between my-6">
+              <div className="m-3 p-4 border sm:w-[40%] border-[#FFFFFF54] rounded-md">
+                <img className="w-full" src="/sponsors/sixpath.png" alt="" />
+              </div>
+              <div className="m-3 p-4 border sm:w-[40%] border-[#FFFFFF54] rounded-md">
+                <img className="w-full" src="/sponsors/sixpath.png" alt="" />
+              </div>
+              <div className="m-3 p-4 border sm:w-[40%] border-[#FFFFFF54] rounded-md">
+                <img className="w-full" src="/sponsors/sixpath.png" alt="" />
+              </div>
+              <div className="m-3 p-4 border sm:w-[40%] border-[#FFFFFF54] rounded-md">
+                <img className="w-full" src="/sponsors/sixpath.png" alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="lg:m-20 m-4 bg-[#0066F5] lg:p-20 p-4 rounded-xl">
+      {/* <div className="lg:m-20 m-4 bg-[#0066F5] lg:p-20 p-4 rounded-xl">
         <h1 className="text-[#DFFF18] heading lg:text-4xl text-2xl mb-8">Our Story</h1>
         <p className="lg:text-lg text-sm">Our mission with Game Fest is to showcase and celebrate the rich diversity of the gaming industry in Nigeria. We strive to create an inclusive and welcoming environment for gamers of all ages, backgrounds, and skill levels to come together and connect through their love of gaming.
           <br /> <br />
@@ -115,8 +155,8 @@ export default function Home() {
           We are committed to fostering innovation, creativity, and excellence in gaming, and to providing educational opportunities for aspiring game developers and enthusiasts. Our goal is to inspire and empower the next generation of Nigerian game developers and to position Nigeria as a leading player in the global gaming industry.
           <br /> <br />
           Above all, we are dedicated to providing a fun and engaging experience for all attendees, and to building a vibrant and supportive community of gamers in Nigeria.</p>
-      </div>
-      <div className="sm:my-10">
+      </div> */}
+      {/* <div className="sm:my-10">
         <OwlCarousel
           responsive={
             {
@@ -154,7 +194,7 @@ export default function Home() {
             <Card color="#58CC4E" text="Media Partnership" />
           </a>
         </OwlCarousel>
-      </div>
+      </div> */}
       <FooterNav />
     </>
   )
