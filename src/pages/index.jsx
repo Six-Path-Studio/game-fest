@@ -102,7 +102,8 @@ export default function Home() {
             <div className="p-6">
               <p className="text-[#DFCF3D] text-xl font-bold">Sponsorship / Partnership</p>
               <p className="my-3">Are you a Business owner looking to grow your business? Reach new customers when you join our network.</p>
-              <button className="bg-[#DFCF3D] flex text-black p-3 rounded-md">Click Here <img className="w-2 my-auto ml-3" src="/arrow.png" alt="" /></button>
+              <a href="mailto:expo@gameverse.africa">
+                <button className="bg-[#DFCF3D] flex text-black p-3 rounded-md">Click Here <img className="w-2 my-auto ml-3" src="/arrow.png" alt="" /></button></a>
             </div>
             <img className="w-full rounded-b-xl" src="/partner-img.png" alt="" />
           </div>
@@ -110,7 +111,9 @@ export default function Home() {
             <div className="p-6">
               <p className="text-[#DFCF3D] text-xl font-bold">Get a stand</p>
               <p className="my-3">Are you a Business owner looking to grow your business? Reach new customers when you join our network.</p>
-              <button className="bg-[#DFCF3D] flex text-black p-3 rounded-md">Click Here <img className="w-2 my-auto ml-3" src="/arrow.png" alt="" /></button>
+              <a href="mailto:expo@gameverse.africa">
+                <button className="bg-[#DFCF3D] flex text-black p-3 rounded-md">Click Here <img className="w-2 my-auto ml-3" src="/arrow.png" alt="" /></button>
+              </a>
             </div>
             <img className="w-full rounded-b-xl" src="/stand-img.png" alt="" />
           </div>
@@ -124,11 +127,33 @@ export default function Home() {
             <p className="text-3xl text-[#DFCF3D]">(#gameexpo24):</p>
           </div>
           <div className="lg:flex justify-center my-6">
-            <div className="m-3 lg:w-[30%] p-4 border border-[#FFFFFF54] rounded-md">
+            <div className="m-3 lg:w-[32%] p-1 rounded-md">
               <img src="/sponsors/gameverse.png" alt="" />
             </div>
-            <div className="m-3 lg:w-[30%] p-4 border border-[#FFFFFF54] rounded-md">
+            <div className="m-3 lg:w-[32%] p-1 rounded-md">
               <img src="/sponsors/divvicson.png" alt="" />
+            </div>
+            {/* <div className="m-3 p-4 border border-[#FFFFFF54] rounded-md">
+              <img src="/sponsors/sixpath.png" alt="" />
+            </div>
+            <div className="m-3 p-4 border border-[#FFFFFF54] rounded-md">
+              <img src="/sponsors/sixpath.png" alt="" />
+            </div> */}
+          </div>
+        </div>
+        <div className="lg:p-20 p-4">
+          <div className="text-center">
+            <h1 className="lg:text-5xl heading text-3xl text-center font-black">Our Official <br />
+              <span className="text-[#DFCF3D]">Partners:</span>
+            </h1>
+            {/* <p className="text-3xl text-[#DFCF3D]">(#gameexpo24):</p> */}
+          </div>
+          <div className="lg:flex justify-center my-6">
+            <div className="m-3 lg:w-[32%] p-1 rounded-md">
+              <img src="/sponsors/yelobyte.png" alt="" />
+            </div>
+            <div className="m-3 lg:w-[32%] p-1 rounded-md">
+              <img src="/sponsors/helixgade.png" alt="" />
             </div>
             {/* <div className="m-3 p-4 border border-[#FFFFFF54] rounded-md">
               <img src="/sponsors/sixpath.png" alt="" />
@@ -143,19 +168,47 @@ export default function Home() {
           <img src="/Container1.png" className='absolute right-0 top-0 sm:w-20 lg:w-44 md:w-20' alt="" />
           <div className="lg:px-20 py-10 p-4">
             <div>
-              <h1 className="lg:text-5xl text-3xl heading text-center font-black">Our Partners</h1>
+              <h1 className="lg:text-5xl text-3xl heading text-center font-black">Our Community <br /> <span className="text-[#DFCF3D]">Partners:</span></h1>
               {/* <h1 className="lg:text-5xl text-3xl text-[#DFCF3D] heading text-center font-black">:</h1> */}
             </div>
-            <div className="lg:flex sm:flex-wrap justify-center my-6">
-              <div className="m-3 p-4 lg:w-[30%] border border-[#FFFFFF54] rounded-md">
+            <div className="lg:flex lg:w-[80%] mx-auto sm:flex-wrap justify-center">
+              <div className="m-3 p-1 lg:w-[32%] rounded-md">
                 <img className="w-full" src="/sponsors/genz.png" alt="" />
               </div>
-              <div className="m-3 p-4 lg:w-[30%] border border-[#FFFFFF54] rounded-md">
+              <div className="m-3 p-1 lg:w-[32%] rounded-md">
                 <img className="w-full" src="/sponsors/sixpath.png" alt="" />
               </div>
-              <div className="m-3 p-4 lg:w-[30%] border border-[#FFFFFF54] rounded-md">
+              <div className="m-3 p-1 lg:w-[32%] rounded-md">
                 <img className="w-full" src="/sponsors/letsbuild.png" alt="" />
               </div>
+              {/* <div className="m-3 p-4 border sm:w-[40%] border-[#FFFFFF54] rounded-md">
+                <img className="w-full" src="/sponsors/sixpath.png" alt="" />
+              </div> */}
+            </div>
+            <div className="lg:flex lg:w-[80%] mx-auto sm:flex-wrap justify-center">
+              <div className="m-3 p-1 lg:w-[32%] rounded-md">
+                <img className="w-full" src="/sponsors/bytechhub.png" alt="" />
+              </div>
+              <div className="m-3 p-1 lg:w-[32%] rounded-md">
+                <img className="w-full" src="/sponsors/uniport.png" alt="" />
+              </div>
+              <div className="m-3 p-1 lg:w-[32%] rounded-md">
+                <img className="w-full" src="/sponsors/gdg.png" alt="" />
+              </div>
+              {/* <div className="m-3 p-4 border sm:w-[40%] border-[#FFFFFF54] rounded-md">
+                <img className="w-full" src="/sponsors/sixpath.png" alt="" />
+              </div> */}
+            </div>
+            <div className="lg:flex lg:w-[80%] mx-auto sm:flex-wrap justify-center">
+              <div className="m-3 p-1 lg:w-[32%] rounded-md">
+                <img className="w-full" src="/sponsors/bamba.png" alt="" />
+              </div>
+              {/* <div className="m-3 p-1 lg:w-[32%] rounded-md">
+                <img className="w-full" src="/sponsors/uniport.png" alt="" />
+              </div>
+              <div className="m-3 p-1 lg:w-[32%] rounded-md">
+                <img className="w-full" src="/sponsors/gdg.png" alt="" />
+              </div> */}
               {/* <div className="m-3 p-4 border sm:w-[40%] border-[#FFFFFF54] rounded-md">
                 <img className="w-full" src="/sponsors/sixpath.png" alt="" />
               </div> */}
@@ -163,6 +216,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+
       {/* <div className="lg:m-20 m-4 bg-[#0066F5] lg:p-20 p-4 rounded-xl">
         <h1 className="text-[#DFFF18] heading lg:text-4xl text-2xl mb-8">Our Story</h1>
         <p className="lg:text-lg text-sm">Our mission with Game Fest is to showcase and celebrate the rich diversity of the gaming industry in Nigeria. We strive to create an inclusive and welcoming environment for gamers of all ages, backgrounds, and skill levels to come together and connect through their love of gaming.
