@@ -10,7 +10,9 @@ const HeaderNav = () => {
         <p className='my-auto'>Sponsors</p>
         <p className='my-auto'>Our Merch</p>
         <p className='my-auto'>Contact Us</p>
-        <button className='bg-white p-3 text-black rounded-md'>Get ticket</button>
+        <a href="https://tix.africa/discover/gameexpo24" target='_blank'>
+          <button className='bg-white p-3 text-black rounded-md'>Get ticket</button>
+        </a>
       </div>
     </div>
   );

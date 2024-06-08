@@ -11,7 +11,7 @@ const Hero = () => {
         <div className='flex justify-evenly bg-white rounded-md p-2 text-black text-left w-72 mx-auto'>
           <img src="/date.png" className='w-8 h-10' alt="" />
           <div className='ml-4'>
-            <p className='text-xs'>August 2024.</p>
+            <p className='text-sm'>Sat. 17th Aug. 2024</p>
             <p className='font-bold'>Port Harcourt, Nigeria.</p>
           </div>
         </div>

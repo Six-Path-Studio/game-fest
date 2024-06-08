@@ -74,8 +74,12 @@ export default function Home() {
         <div className="lg:w-[60%] ml-auto">
           <p className="my-4 lg:text-lg text-sm">Explore is your one-stop shop for discovering the exciting world of games as a career, hobby, and cultural phenomenon. We want everyone to dive deep into workshops, witness esports competitions, and immerse yourself in a vibrant showcase of African-inspired games, opportunities and more. Let us explore together.</p>
           <div className="flex">
-            <button className="rounded-full flex justify-center p-3 bg-white lg:w-40 text-black">Get ticket <img className="w-2 my-auto ml-3" src="/arrow.png" alt="" /></button>
-            <button className="rounded-full ml-6 p-3 border border-white lg:w-40 text-white">Book a Stand</button>
+            <a href="https://tix.africa/discover/gameexpo24" target="_blank">
+              <button className="rounded-full flex justify-center p-3 bg-white lg:w-40 text-black">Get ticket <img className="w-2 my-auto ml-3" src="/arrow.png" alt="" /></button>
+            </a>
+            <a href="mailto:expo@gameverse.africa">
+              <button className="rounded-full ml-6 p-3 border border-white lg:w-40 text-white">Book a Stand</button>
+            </a>
           </div>
         </div>
       </section>
